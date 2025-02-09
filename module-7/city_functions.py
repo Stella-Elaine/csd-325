@@ -1,9 +1,15 @@
-# city_functions.py
+def format_city_country(city, country, language, population):
+    # Return a formatted string in the form 'City, Country'.
+    if population:
+        print("with population")
+        return f"{city.title()}, {country.title()}, language,{language.title()}, population {population.title()}"
+    else:
+        print("no population")
+        return f"{city.title()}, {country.title()},language,{language.title()}"
 
-def format_city_country(city, country):
-    "Return a formatted string in the form 'City, Country'."
-    return f"{city.title()}, {country.title()}"
+print(format_city_country("santiago", "chile","spanish","300"))
 
-print(format_city_country("santiago", "chile"))
-print(format_city_country("paris", "france"))
-print(format_city_country("tokyo", "japan"))
+print(format_city_country("paris", "france","french", "700"))
+
+print(format_city_country("tokyo", "japan", "japanese","100"))
+
