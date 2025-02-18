@@ -4,7 +4,7 @@ db = mysql.connector.connect(
     host="localhost",
     user="root",
     password="password",
-    database="bacchus_winery"
+    database=" "
 )
 cursor = db.cursor()
 # Drop tables if they exist to start fresh

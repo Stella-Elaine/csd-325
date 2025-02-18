@@ -5,7 +5,7 @@ db = mysql.connector.connect(
     host="localhost",
     user="root",
     password="password",
-    database="bacchus_winery"
+    database=" "
 )
 cursor = db.cursor()
 #Supplier Delivery Timeliness
